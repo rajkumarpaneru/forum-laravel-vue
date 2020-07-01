@@ -24,6 +24,8 @@ import vuetify from "../plugins/vuetify";
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('app-home', require('./components/AppHome.vue').default);
 
+import router from './router/router'
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -33,4 +35,5 @@ Vue.component('app-home', require('./components/AppHome.vue').default);
 const app = new Vue({
     vuetify: vuetify,
     el: '#app',
+    router
 });
