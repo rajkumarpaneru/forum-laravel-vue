@@ -1,18 +1,19 @@
 <template>
     <div>
-        <toolbar></toolbar>
-        <app-footer></app-footer>
+        <v-footer class="pa-3">
+            Company
+            <v-spacer></v-spacer>
+            <div>&copy; {{new Date().getFullYear()}}</div>
+        </v-footer>
     </div>
 </template>
 
 <script>
     import toolbar from './Toolbar'
-    import AppFooter from './AppFooter'
 
     export default {
         components: {
             toolbar,
-            AppFooter,
         },
         mounted() {
             console.log('Component mounted.')
