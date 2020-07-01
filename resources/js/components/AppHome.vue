@@ -1,14 +1,13 @@
 <template>
-    <h1>Home</h1>
+    <div class="container">
+        <h1>Home</h1>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "AppHome",
-        el: "#app"
+        mounted() {
+            console.log('Component mounted.')
+        }
     }
 </script>
-
-<style scoped>
-
-</style>
